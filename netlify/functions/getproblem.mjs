@@ -18,5 +18,5 @@ export default async (req, context) => {
         "content": bodyText
     }]
   });
-  return new Response(res);
+  return new Response(res.json());
 };
