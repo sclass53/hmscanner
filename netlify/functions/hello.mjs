@@ -1,3 +1,3 @@
 export default async (req, context) => {
-  return new Response(`Hello, world!${context}`);
+  return new Response(req.body);
 };

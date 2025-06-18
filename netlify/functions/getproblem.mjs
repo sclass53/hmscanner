@@ -1,8 +1,8 @@
 import { CozeAPI } from '@coze/api';
 
 export default async (req, context) => {
-  let a=toString(req.body);
-
+  const bodyText = await req.text();
+/*
   const apiClient = new CozeAPI({
     token: 'pat_xJoOc8tUVkYDAFJcOIPMb6igXUBERsUbIifHyMj6OjAy2MCQ0MG4pRH7cID4L8ph',
     baseURL: 'https://api.coze.cn'
@@ -17,6 +17,6 @@ export default async (req, context) => {
         "content_type": "text",
         "content": `${a}`
     }]
-  });
-  return new Response(a);
+  });*/
+  return new Response(bodyText);
 };
