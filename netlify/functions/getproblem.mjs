@@ -1,4 +1,4 @@
-import { CozeAPI } from '@coze/api';
+import { CozeAPI,ChatEventType, ChatStatus, COZE_COM_BASE_URL, RoleType } from '@coze/api';
 
 export default async (req, context) => {
   const bodyText = await req.text();
