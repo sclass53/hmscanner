@@ -4,7 +4,7 @@ export default async (req, context) => {
   const bodyText = await req.text();
 
   const apiClient = new CozeAPI({
-    token: 'pat_xJoOc8tUVkYDAFJcOIPMb6igXUBERsUbIifHyMj6OjAy2MCQ0MG4pRH7cID4L8ph',
+    token: process.env.TOKEN,
     baseURL: 'https://api.coze.cn',
     allowPersonalAccessTokenInBrowser: true
   });
@@ -15,8 +15,8 @@ export default async (req, context) => {
     {
         "role": "user",
         "type": "question",
-        "content_type": "text",
-        "content": bodyText
+        "content_type": "object_string",
+        "content": JSON.stringify([{type:"image",bodyText}])
     }]
   });
   let gx=[];
