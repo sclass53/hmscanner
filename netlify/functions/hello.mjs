@@ -16,7 +16,7 @@ export default async (req, context) => {
           "role": "user",
           "type": "question",
           "content_type": "object_string",
-          "content": JSON.stringify([{type:"image",bodyText}])
+          "content": JSON.stringify([{"type":"image","file_id":bodyText}])
       }]
     });
     let gx=[];
