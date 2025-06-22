@@ -4,7 +4,7 @@ export default async (req, context) => {
   const bodyText = await req.text();
 
   const apiClient = new CozeAPI({
-    token: "pat_xJoOc8tUVkYDAFJcOIPMb6igXUBERsUbIifHyMj6OjAy2MCQ0MG4pRH7cID4L8ph",
+    token: "pat_BxvbBTxy8PwDv43194dK3tb4nCynsLN6X1ooIlGIqZPvysyO8iIXZSLLjaYb7Ev0",
     baseURL: 'https://api.coze.cn',
     allowPersonalAccessTokenInBrowser: true
   });
