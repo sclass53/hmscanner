@@ -25,9 +25,9 @@ export default async (req, context) => {
     }
   }
   var hds=new Headers();
-  hds.append('Access-Control-Allow-Origin','*') // 允许所有域名（生产环境建议替换为具体域名）
-  hds.append('Access-Control-Allow-Headers','*') // 允许的请求头
-  hds.append('Access-Control-Allow-Methods','GET, POST') // 允许的 HTTP 方法)
+  hds.append('Access-Control-Allow-Origin','*'); // 允许所有域名（生产环境建议替换为具体域名）
+  hds.append('Access-Control-Allow-Headers','*'); // 允许的请求头
+  hds.append('Access-Control-Allow-Methods','GET, POST'); // 允许的 HTTP 方法)
   return new Response(gx.join(""),{
     headers: hds
   });
